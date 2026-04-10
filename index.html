@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research Study Checklist</title>
+    <style>
+        :root {
+            --bg: #f4efe6;
+            --card: #fffaf2;
+            --ink: #1f2933;
+            --muted: #52606d;
+            --accent: #0b6e4f;
+            --border: #d9c9a3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Georgia, "Times New Roman", serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(217, 201, 163, 0.45), transparent 28%),
+                linear-gradient(180deg, #efe7d8 0%, var(--bg) 100%);
+            min-height: 100vh;
+        }
+
+        main {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px;
+            box-shadow: 0 18px 60px rgba(73, 63, 38, 0.12);
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 4vw, 3.3rem);
+            line-height: 1.05;
+        }
+
+        .subtitle {
+            margin: 0 0 24px;
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .meta a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+            border-top: 1px solid var(--border);
+            padding-top: 18px;
+            margin-top: 18px;
+        }
+
+        section:first-of-type {
+            border-top: 0;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 1.3rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 12px;
+            border: 1px solid rgba(217, 201, 163, 0.8);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.65);
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            margin-top: 3px;
+            accent-color: var(--accent);
+            flex: 0 0 auto;
+        }
+
+        label {
+            line-height: 1.45;
+            cursor: pointer;
+        }
+
+        .footer-note {
+            margin-top: 24px;
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                padding: 20px;
+                border-radius: 16px;
+            }
+
+            li {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <h1>Research Study Checklist</h1>
+            <p class="subtitle">A digital checklist version of your Research Study Report requirements.</p>
+            <div class="meta">
+                <a href="research_study_checklist.md">Open Markdown version</a>
+            </div>
+
+            <section>
+                <h2>Title</h2>
+                <ul>
+                    <li><input id="item-1" type="checkbox"><label for="item-1">1. Is my RSR written in Arial, size 12,
+                            1.5 line spacing?</label></li>
+                    <li><input id="item-2" type="checkbox"><label for="item-2">2. Have I written down the full title of
+                            my research study in the booklet?</label></li>
+                    <li><input id="item-3" type="checkbox"><label for="item-3">3. Have I included the date parameters of
+                            my research study in the title?</label></li>
+                    <li><input id="item-4" type="checkbox"><label for="item-4">4. Are the dates of my research study
+                            located in the period before 1993 if my subject relates to Irish history or before 1992 if
+                            my subject relates to the history of Europe and the wider world?</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Outline Plan</h2>
+                <ul>
+                    <li><input id="item-5" type="checkbox"><label for="item-5">5. Have I written the heading "Define and
+                            justify"?</label></li>
+                    <li><input id="item-6" type="checkbox"><label for="item-6">6. Have I explained what my study is
+                            about (define)?</label></li>
+                    <li><input id="item-7" type="checkbox"><label for="item-7">7. Have I explained why my subject
+                            matters (justify)?</label></li>
+                    <li><input id="item-8" type="checkbox"><label for="item-8">8. Have I written the heading
+                            "Aims"?</label></li>
+                    <li><input id="item-9" type="checkbox"><label for="item-9">9. Have I given 3 aims about my topic
+                            that I hope to find the answers to?</label></li>
+                    <li><input id="item-10" type="checkbox"><label for="item-10">10. Have I written the heading
+                            "Intended approach"?</label></li>
+                    <li><input id="item-11" type="checkbox"><label for="item-11">11. Have I written a short paragraph
+                            about how I will research this project?</label></li>
+                    <li><input id="item-12" type="checkbox"><label for="item-12">12. Cite at least two sources at
+                            Ordinary level or at least three at Higher level.</label></li>
+                    <li><input id="item-13" type="checkbox"><label for="item-13">13. Have I cited my sources fully and
+                            accurately? (e.g. author, title, publisher, place of publication, year of
+                            publication)</label></li>
+                    <li><input id="item-14" type="checkbox"><label for="item-14">14. Have I cited any website source
+                            that I used fully and accurately with full URL and date accessed?</label></li>
+                    <li><input id="item-15" type="checkbox"><label for="item-15">15. Have I completed my Outline Plan on
+                            the correct page of the booklet?</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The Evaluation of the Sources</h2>
+                <ul>
+                    <li><input id="item-16" type="checkbox"><label for="item-16">16. Have I evaluated each of the
+                            sources that I cited fully in my Outline Plan in the same order?</label></li>
+                    <li><input id="item-17" type="checkbox"><label for="item-17">17. Have I commented on the relevance
+                            of each source to the subject of my study?</label></li>
+                    <li><input id="item-18" type="checkbox"><label for="item-18">18. Have I commented on the strengths
+                            and weaknesses of each source to the subject of my study?</label></li>
+                    <li><input id="item-19" type="checkbox"><label for="item-19">19. Have I given specific references to
+                            aspects of each source e.g. a map on Px, an image of Y under a specific tab of the website,
+                            difficult words used such as Z etc.</label></li>
+                    <li><input id="item-20" type="checkbox"><label for="item-20">20. Have I completed the Evaluation of
+                            the Sources on the relevant pages of the booklet? Have I filled both pages?</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The Extended Essay</h2>
+                <ul>
+                    <li><input id="item-21" type="checkbox"><label for="item-21">21. Have I included an introduction,
+                            paragraphs, and a conclusion?</label></li>
+                    <li><input id="item-22" type="checkbox"><label for="item-22">22. Have I addressed in my essay the
+                            aims that I set down in my Outline Plan?</label></li>
+                    <li><input id="item-23" type="checkbox"><label for="item-23">23. Have I ensured that the essay is
+                            sufficiently focused on the title of my study?</label></li>
+                    <li><input id="item-24" type="checkbox"><label for="item-24">24. Have I used endnotes and listed
+                            them at the end of the essay?</label></li>
+                    <li><input id="item-25" type="checkbox"><label for="item-25">25. Have I made sure my project makes
+                            sense, e.g. is it written in chronological order?</label></li>
+                    <li><input id="item-26" type="checkbox"><label for="item-26">26. Have I included at least 3 quotes
+                            or references to sources/authors?</label></li>
+                    <li><input id="item-27" type="checkbox"><label for="item-27">27. Have I ensured that my Extended
+                            Essay consists of 1200-1500 words (HL) / 600-800 words (OL), including my review?</label>
+                    </li>
+                    <li><input id="item-28" type="checkbox"><label for="item-28">28. Have I listed any other sources
+                            that I used at the end of my project?</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Review of the Research Process</h2>
+                <ul>
+                    <li><input id="item-29" type="checkbox"><label for="item-29">29. Have I written a separate heading
+                            "Review of the research process"?</label></li>
+                    <li><input id="item-30" type="checkbox"><label for="item-30">30. Have I included a review of the
+                            research process?</label></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Finally</h2>
+                <ul>
+                    <li><input id="item-31" type="checkbox"><label for="item-31">31. Have I kept notes and rough drafts
+                            prepared as part of the research study, including tapes and/or transcripts of oral history
+                            testimony (where appropriate)?</label></li>
+                    <li><input id="item-32" type="checkbox"><label for="item-32">32. Have I submitted my report to my
+                            teacher and signed the appropriate form?</label></li>
+                </ul>
+            </section>
+
+            <p class="footer-note">Open this file in a browser, or publish the folder with GitHub Pages.</p>
+        </div>
+    </main>
+</body>
+
+</html>
